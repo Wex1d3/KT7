@@ -13,4 +13,8 @@ celery[redis]==5.4.0
 slowapi==0.1.9
 pytest==8.3.5
 httpx==0.28.1
+<<<<<<< HEAD
 psycopg[binary]
+=======
+psycopg2
+>>>>>>> f2cba1e (Fix PostgreSQL driver)
