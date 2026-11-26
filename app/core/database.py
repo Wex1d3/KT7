@@ -6,15 +6,13 @@ from app.core.config import settings
 
 database_url = settings.database_url
 
-if database_url.startswith("postgres://"):
+if database_url.startswith("postgresql+psycopg://"):
     database_url = database_url.replace(
-        "postgres://",
         "postgresql+psycopg://",
         1
     )
-elif database_url.startswith("postgresql://"):
+elif database_url.startswith("postgresql+psycopg://"):
     database_url = database_url.replace(
-        "postgresql://",
         "postgresql+psycopg://",
         1
     )
